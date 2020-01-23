@@ -45,7 +45,7 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
         }
         System.out.println("collected Data");
         mMyAdapter = new MyAdapter(mData);
-        RecyclerView recyclerView = findViewById(R.id.abc);
+        RecyclerView recyclerView = findViewById(R.id.recyclerView);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         recyclerView.setAdapter(mMyAdapter);
     }
